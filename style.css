@@ -1,0 +1,55 @@
+/*
+* @Author: Galena
+* @Date:   2019-03-23 19:35:28
+* @Last Modified by:   Galena
+* @Last Modified time: 2019-03-23 22:03:56
+*/
+body {
+}
+.box {
+	position: relative;
+	width: 960px;
+	overflow: hidden;
+	margin: 100px auto;
+}
+.image {
+	display: flex;
+	transition: all 0.5s;
+}
+.status0 {
+	margin-left: 0;
+}
+.status1 {
+	margin-left: -960px;
+}
+.status2 {
+	margin-left: -1920px;
+}
+.status3 {
+	margin-left: -2880px;
+}
+
+.image > img {
+	height: 540px;
+}
+
+
+.buttonWrapper {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}
+
+.button {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 7px;
+	background-color: #dddddd;
+}
+
+.buttonActive {
+	background-color: #3C85E1;
+}
