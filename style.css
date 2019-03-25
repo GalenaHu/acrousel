@@ -2,8 +2,12 @@
 * @Author: Galena
 * @Date:   2019-03-23 19:35:28
 * @Last Modified by:   Galena
-* @Last Modified time: 2019-03-23 22:03:56
+* @Last Modified time: 2019-03-25 15:11:18
 */
+*{
+	margin: 0;
+	padding: 0;
+}
 body {
 }
 .box {
@@ -48,8 +52,57 @@ body {
 	border-radius: 50%;
 	margin: 7px;
 	background-color: #dddddd;
+	opacity: 0.5;
+}
+
+.button:hover {
+	opacity: 1;
 }
 
 .buttonActive {
 	background-color: #3C85E1;
+}
+
+
+.box2 {
+	position: relative;
+	width: 960px;
+	overflow: hidden;
+	margin: 100px auto;
+}
+.image2 {
+	display: flex;
+	transform: translateX(-960px);
+}
+.image2Toggle {
+	transition: transform 0.5s;
+}
+
+
+.image2 > img {
+	height: 540px;
+}
+
+
+
+.buttonWrapper2 {
+	position: absolute;
+	width: 100%;
+	top: 240px;
+	display: flex;
+}
+.buttonWrapper2 > div:nth-child(2) {
+	flex: 1;
+}
+
+.icon {
+   width: 60px; height: 60px;
+   vertical-align: -0.15em;
+   fill: #ffffff;
+   overflow: hidden;
+   opacity: 0.5;
+}
+
+.icon:hover {
+	opacity: 1;
 }
